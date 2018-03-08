@@ -35,7 +35,7 @@ func (r *RestAdapter) Ping() error {
   endpoint = r.host + "/ping"
   response, err := httpclient.Get(endpoint)
 
-log.Println("rest: on-ping:", response.StatusCode)
+  log.Println("rest: on-ping:", response.StatusCode)
 
   if err != nil {
     log.Println("rest: Failed to ping")
